@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.txtdocumento = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +37,6 @@
             this.btncancelar = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,35 +44,13 @@
             // 
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Image = global::CapaPresentacion.Properties.Resources.fonfo2;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 206);
+            this.label1.Size = new System.Drawing.Size(251, 206);
             this.label1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SteelBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 166);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "SISTEMA DE VENTA";
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.SteelBlue;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Store;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 114;
-            this.iconPictureBox1.Location = new System.Drawing.Point(57, 34);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(114, 114);
-            this.iconPictureBox1.TabIndex = 2;
-            this.iconPictureBox1.TabStop = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtdocumento
             // 
@@ -164,7 +139,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.LogoCanal;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.ventas;
             this.pictureBox1.Location = new System.Drawing.Point(421, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 50);
@@ -186,14 +161,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtdocumento);
-            this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -203,8 +175,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.TextBox txtdocumento;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Label label3;

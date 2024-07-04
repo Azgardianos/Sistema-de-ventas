@@ -40,19 +40,20 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(105, 304);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 13);
+            this.label3.Size = new System.Drawing.Size(168, 13);
             this.label3.TabIndex = 36;
-            this.label3.Text = "Desarrollado por: Codigo Estudiante";
+            this.label3.Text = "Desarrollado por: Los Asgardianos";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 89);
+            this.label4.Location = new System.Drawing.Point(12, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(269, 174);
             this.label4.TabIndex = 34;
             this.label4.Text = resources.GetString("label4.Text");
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -61,8 +62,9 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(269, 35);
             this.label2.TabIndex = 35;
-            this.label2.Text = "Este sistema se publica bajo los términos de la licenca MIT";
+            this.label2.Text = "Este sistema esta acargo de los Asgardianos";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 

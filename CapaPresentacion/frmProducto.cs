@@ -107,6 +107,9 @@ namespace CapaPresentacion
                        txtcodigo.Text,
                        txtnombre.Text,
                        txtdescripcion.Text,
+                       txtStock.Text,
+                       txtPrecioCompra.Text,
+                       txtPrecioVenta.Text,
                        ((OpcionCombo)cbocategoria.SelectedItem).Valor.ToString(),
                        ((OpcionCombo)cbocategoria.SelectedItem).Texto.ToString(),
                        "0",
@@ -135,6 +138,9 @@ namespace CapaPresentacion
                     row.Cells["Id"].Value = txtid.Text;
                     row.Cells["Codigo"].Value = txtcodigo.Text;
                     row.Cells["Nombre"].Value = txtnombre.Text;
+                    row.Cells["Stock"].Value = txtStock.Text;  // Actualizar el stock en el DataGridView
+                    row.Cells["PrecioCompra"].Value = txtPrecioCompra.Text;  // Actualizar el precio de compra en el DataGridView
+                    row.Cells["PrecioVenta"].Value = txtPrecioVenta.Text;
                     row.Cells["Descripcion"].Value = txtdescripcion.Text;
                     row.Cells["IdCategoria"].Value = ((OpcionCombo)cbocategoria.SelectedItem).Valor.ToString();
                     row.Cells["Categoria"].Value = ((OpcionCombo)cbocategoria.SelectedItem).Texto.ToString();
@@ -156,18 +162,20 @@ namespace CapaPresentacion
 
         private void Limpiar()
         {
-
             txtindice.Text = "-1";
             txtid.Text = "0";
             txtcodigo.Text = "";
             txtnombre.Text = "";
             txtdescripcion.Text = "";
+            txtStock.Text = ""; // Limpiar el campo de stock
+            txtPrecioCompra.Text = ""; // Limpiar el campo de precio de compra
+            txtPrecioVenta.Text = ""; // Limpiar el campo de precio de venta
             cbocategoria.SelectedIndex = 0;
             cboestado.SelectedIndex = 0;
 
             txtcodigo.Select();
-
         }
+
 
         private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
@@ -205,7 +213,9 @@ namespace CapaPresentacion
                     txtcodigo.Text = dgvdata.Rows[indice].Cells["Codigo"].Value.ToString();
                     txtnombre.Text = dgvdata.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtdescripcion.Text = dgvdata.Rows[indice].Cells["Descripcion"].Value.ToString();
-            
+                    txtStock.Text= dgvdata.Rows[indice].Cells["Stock"].Value.ToString();
+                    txtPrecioCompra.Text= dgvdata.Rows[indice].Cells["PrecioCompra"].Value.ToString();
+                    txtPrecioVenta.Text= dgvdata.Rows[indice].Cells["PrecioVenta"].Value.ToString();
 
                     foreach (OpcionCombo oc in cbocategoria.Items)
                     {
@@ -345,6 +355,26 @@ namespace CapaPresentacion
                 }
 
             }
+        }
+
+        private void cbocategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

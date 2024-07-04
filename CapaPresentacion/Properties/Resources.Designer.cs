@@ -19,7 +19,7 @@ namespace CapaPresentacion.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -93,6 +93,26 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo {
+            get {
+                object obj = ResourceManager.GetObject("fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fonfo2 {
+            get {
+                object obj = ResourceManager.GetObject("fonfo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoCanal {
             get {
                 object obj = ResourceManager.GetObject("LogoCanal", resourceCulture);
@@ -104,6 +124,7 @@ namespace CapaPresentacion.Properties {
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
+        ///    &lt;!--sistema creado por el canal yt codigo estudiante--&gt;
         ///    &lt;title&gt;Web Page Design&lt;/title&gt;
         ///    &lt;style&gt;
         ///        table.border {
@@ -119,12 +140,7 @@ namespace CapaPresentacion.Properties {
         ///            table.border td {
         ///                text-align: center;
         ///                padding: 5px;
-        ///                border: 1px solid black;
-        ///            }
-        ///    &lt;/style&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///    &lt;tab [resto de la cadena truncado]&quot;;.
+        ///                border: 1px solid b [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string PlantillaCompra {
             get {
@@ -146,6 +162,7 @@ namespace CapaPresentacion.Properties {
         ///   Busca una cadena traducida similar a &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
+        ///    &lt;!--sistema creado por el canal yt codigo estudiante--&gt;
         ///    &lt;title&gt;Web Page Design&lt;/title&gt;
         ///    &lt;style&gt;
         ///        table.border {
@@ -161,16 +178,31 @@ namespace CapaPresentacion.Properties {
         ///            table.border td {
         ///                text-align: center;
         ///                padding: 5px;
-        ///                border: 1px solid black;
-        ///            }
-        ///    &lt;/style&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///    &lt;tab [resto de la cadena truncado]&quot;;.
+        ///                border: 1px solid b [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string PlantillaVenta {
             get {
                 return ResourceManager.GetString("PlantillaVenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ventas {
+            get {
+                object obj = ResourceManager.GetObject("ventas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_06_22_at_9_48_08_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-06-22 at 9.48.08 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

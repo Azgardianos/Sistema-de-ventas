@@ -308,6 +308,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logocanal.ico" />
+    <None Include="Resources\fonfo2.jpg" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\ventas.jpg" />
+    <None Include="Resources\WhatsApp Image 2024-06-22 at 9.48.08 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
